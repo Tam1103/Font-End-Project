@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+
+/**/
+
+.container{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+/**/
+
+header{
+	color: #ffffff;
+	background-color: #000000;
+	border-bottom: 3px solid #65BED6;
+}
+header #branding{
+	font-style: italic;
+	font-size: 30px;
+}
+header ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+header ul li{
+	display: inline;
+}
+header ul li a{
+	text-decoration: none;
+	display: inline-block;
+	color: #ffffff;
+	font-style: 16px;
+	font-weight: bold;
+	padding: 20px;
+	border-radius: 2px;
+}
+header ul li a:hover,.current a:hover,.button_1:hover{
+	color: #ffffff;
+	background:  #65BED6;
+	cursor: pointer;
+}
+header ul li a:hover,.current a:hover,.button_1:hover{
+	color: #ffffff;
+	background:  #65BED6;
+	cursor: pointer;
+}
+header .hightlight, header ul li.current a{
+	color: #65BED6;
+	font-weight: bold;
+}
+
+
+/**/
+
+#banner{
+	min-height: 400px;
+	background-image: url(../img/workbench.jpg);
+}
+#banner .container{
+	justify-content: center;
+}
+#banner .text{
+	margin-top: 150px;
+}
+#banner .text h1{
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+
+/**/
+
+
+#letter{
+	color: #ffffff;
+	background-color: #000000;
+}
+#letter form{
+	padding: 20px;
+}
+#letter input[type="email"]{
+	width:250px;
+	padding: 8px;
+	font-style: italic;
+	font-family: 'Dancing Script', cursive !important;
+}
+#letter button, .button_2{	
+	font-style: italic;
+	padding: 10px;
+	background: #65BED6;
+	border:0;
+	font-family: 'Dancing Script', cursive !important;
+}
+
+
+/**/
+
+
+#boxes{
+	margin-top: 30px;
+}
+#boxes img{
+	max-width: 200px;
+	max-height: 200px;
+}
+#boxes .box{
+	width:30%;
+}
+
+
+
+
+/*blogs*/
+#wrapper{
+	min-height: 500px;
+}
+#wrapper .container{
+	align-items: flex-start;
+}
+#wrapper p,#wrapper h1, #services h1, #services p{
+	text-align: left;
+}
+#wrapper .box_1{
+	width: 60%;
+	padding: 10px;
+}
+#wrapper .box_2{
+	margin-top: 40px;
+	padding: 10px;
+	width: 30%;
+	background: #65BED6;
+}
+#wrapper .mid{
+	padding: 10px;
+	background: #65BED6;
+	line-height: 2.5;
+}
+
+
+
+/*services*/
+#services{
+	padding-bottom: 50px;
+}
+#services .container{
+	display: grid;
+}
+#services .box_4{
+	grid-area: 1/2/span 3;
+	background: #ccc;
+	padding: 10px;
+	margin-left: 30px;
+	margin-top: 10px;
+	min-width: 280px;
+}
+#services .box_1,
+#services .box_2,#services .box_3{
+	background-color: #65BED6;
+	padding: 20px;
+	margin-top: 3px;
+}
+#services input[type="name"],#services input[type="email"],
+#services textarea,#services button{
+	width: 250px;
+	min-height: 30px;
+}
+
+footer{
+	margin-top: 20px;
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+	font-family: 'Dancing Script', cursive;
+}
+
+@media only screen and (max-width: 600px) {
+	body,html {
+	}
+	header ul li a{
+		border-radius: 100%;
+	}
+	.container{
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	#banner .text{
+		margin-top:50px;
+	}
+	#letter input[type="email"]{
+		width:100%
+	}
+	#letter button{
+		margin-top: 5px;
+		width:108%;
+	}
+	#boxes .box{
+		width: 100%;
+	}
+	#banner{
+		min-height: 400px;
+		background-image: url(../img/workbench.jpg);
+	}
+
+	/**/
+	#wrapper .box_2, #wrapper .box_1{
+		width: 80%;
+	}
+	#services .container{
+		display: flex;
+	}
+	#services .box_4{
+		margin: 3px;
+		width: 100%;
+	}
+
+	/**/
+	#services input[type="name"],#services input[type="email"],
+	#services textarea,#services button{
+		width: 100%;
+	}
+}
