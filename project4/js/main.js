@@ -1,6 +1,10 @@
 
 //scroll equals jquery 
-$(".button_1").click(function(){
-	$("html,body").animate({scrollTop : $(".our-work").position().top},1000);
+$(".button-header").click(function(){
+	$("html,body").animate({scrollTop : $("#frame-text").position().top},900);
 });
 
+
+$("#backtotop").click(function(){
+	$("html,body").animate({scrollTop : $("#intro-services").position().top},900);
+});
