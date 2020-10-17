@@ -32,5 +32,5 @@ position-fixed: lying still on the screen when dragging still does not disappear
 position-absolute: place the cards on the screen
 positon-relative can go to with properties z-inden:1
 # project 7
-background-attachment: fixed;  //scroll text with images
+background-attachment: fixed;  //scroll text with images.
 
