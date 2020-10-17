@@ -6,83 +6,94 @@
 
 html,body{
 	font-family: inherit;
-	font-size: 15px;
 	font-family: 'Nunito', sans-serif;
+	background-color: #3498DB;
 }
 
-main{
-	width: 100%;
-	text-align:center;
-	color: #D35400;
+.container ul{
+	margin: 10px 0px 0px 10px;
+	padding: 0;
+	list-style-type: none;
 }
-#intro-services{
-	background-image: url(../img/beach.jpg);
-	background-size: cover;
-	background-position: center;
-	min-height: 680px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-} 
-#intro-services h1{
-	font-size: 35px;
-}
-#intro-services .button-header{
-	border-radius: 5px;
-	padding: 10px;
-	border:0;
-	margin-top: 15px;
-	outline:none;
-	background: #ccc;
-	font-family: 'Nunito', sans-serif;
-}
-#intro-services .button-header:hover{
-	cursor: pointer;
-	background:#D35400;
-}
+
 .container{
-	width: 100%;
 	margin: auto;
+	width: 70%;
+	text-transform: capitalize;
 }
 
-#frame-text .box-1, #frame-text .box-2{
-	padding: 20px;
+.container .branch h1{
+	padding: 15px 0px;
 }
-#frame-text .box-1, .boxes .boxes-1, .boxes .boxes-3{
-	background: #D35400;
+
+.container .highlight{
 	color: #ffffff;
 }
-#frame-text .boxes{
+
+.wrapper{
 	display: flex;
-}
-.boxes div{
-	padding: 10px;
+	background-color: #ffffff;
 }
 
-#backtotop{
-	border-radius: 100px;
-	margin-top: -20px;
-	min-width: 100px;
-	background:#000000;
-	right: 0;
-	position: absolute;
-	transition: transform 0.6s,padding 0.6s;
-	margin-bottom: 60px;
+.wrapper .contact{
+	width: 35%;
+	background-color: lightblue; 
+}
+.wrapper .about{
+	padding: 15px;
+}
+.wrapper .form-contact{
+	padding: 30px;
+	width: 85%;
 }
 
-#backtotop:hover{
-	color: #ffffff;
-	cursor: pointer;
-	transform: rotate(45deg);
-	padding: 10px 0px;
+.wrapper form{
+	display: grid;
+	grid-row: 5px;
+	grid-template-columns: 1fr 1fr;
+}
+.wrapper label{
+	display: block;
 }
 
-@media only screen and (max-width: 425px)
+.wrapper input{
+	width: 95%;
+	min-height: 25px;
+}
+
+.wrapper .full{
+	grid-column: 1/ span 2;
+}
+.wrapper textarea,.wrapper .button-1{
+	width: 100%;
+}
+.wrapper .button-1{
+	padding: 3px;
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	border: 0;
+	background: #cccccc;
+	outline: none;
+}
+
+.wrapper .button-1:hover{
+	background: lightblue;
+}
+
+@media only screen and (max-width: 768px)
 {
-	#frame-text .boxes{
-		display: flex;
+	.container{
+		width: 90%;
+	}
+	
+	.wrapper{
 		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 	}
 
+	.wrapper .contact,.container .branch h1{
+		width: 100%;
+		text-align: center;
+	}
 }
