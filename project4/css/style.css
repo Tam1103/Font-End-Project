@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	font-family: inherit;
+	font-size: 15px;
+	font-family: 'Nunito', sans-serif;
+}
+
+main{
+	width: 100%;
+	text-align:center;
+	color: #D35400;
+}
+#intro-services{
+	background-image: url(../img/beach.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 680px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+} 
+#intro-services h1{
+	font-size: 35px;
+}
+#intro-services .button-header{
+	border-radius: 5px;
+	padding: 10px;
+	border:0;
+	margin-top: 15px;
+	outline:none;
+	background: #ccc;
+	font-family: 'Nunito', sans-serif;
+}
+#intro-services .button-header:hover{
+	cursor: pointer;
+	background:#D35400;
+}
+.container{
+	width: 100%;
+	margin: auto;
+}
+
+#frame-text .box-1, #frame-text .box-2{
+	padding: 20px;
+}
+#frame-text .box-1, .boxes .boxes-1, .boxes .boxes-3{
+	background: #D35400;
+	color: #ffffff;
+}
+#frame-text .boxes{
+	display: flex;
+}
+.boxes div{
+	padding: 10px;
+}
+
+#backtotop{
+	border-radius: 100px;
+	margin-top: -20px;
+	min-width: 100px;
+	background:#000000;
+	right: 0;
+	position: absolute;
+	transition: transform 0.6s,padding 0.6s;
+	margin-bottom: 60px;
+}
+
+#backtotop:hover{
+	color: #ffffff;
+	cursor: pointer;
+	transform: rotate(45deg);
+	padding: 10px 0px;
+}
+
+@media only screen and (max-width: 425px)
+{
+	#frame-text .boxes{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
