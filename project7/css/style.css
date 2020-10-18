@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -7,68 +8,80 @@
 html,body{
 	font-family: inherit;
 	font-size: 15px;
+	font-family: inherit;
 	font-family: 'Nunito', sans-serif;
 }
-
-.container{
-	width: 99%;
-	margin: auto;
+.container .ful1,.container .ful2,
+.container .ful3,main .full
+{
 	display: flex;
-	flex-direction: columns;
-	justify-content: space-between;
 	align-items: center;
+	background-position: center;
 	flex-wrap: wrap;
-}
-
-.menu{
+	justify-content: space-around;
 	background-attachment: fixed;
-	position: fixed;
-	max-height: 550px;
-	overflow-y:scroll;
-	text-transform: capitalize;
+	background-size: cover;
+}
+main{
+	line-height: 1.8;
+}
+main .full{
+	background-image: url(../img/jared-murray-NSuufgf-BME-unsplash.jpg);
+	min-height: 680px;
+}
+main .full p,.full h1{
+	text-shadow: 0px 0px 3px rgb(234, 237, 237),-0px -0px 1px rgb(234, 237, 237 );
+	color: #ffffff;
+	background: #000000;
+	padding: 1px 20px;
+	text-transform: uppercase;
+	box-shadow: 0px 0px 10px rgb(0,0,0,100),-0px -0px 10px rgb(0,0,0,100);
+	font-size: 16px;
+
+}
+.ful1,.ful2,.ful3{
+	min-height: 350px;
 }
 
-.menu ul li{
-	position:relative;
-	list-style-type: none;  
-	border-bottom: 1px solid #000;
-	padding: 20px;
+.container h1{
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
-.menu a{
-	text-decoration: none;
+.container .first-section{
+	background-color: #ffffff;
+	color: #000000;
 }
-.container .intro{
-	margin-left:310px;
-	padding:20px;
-	margin-bottom:210px;
-	position: absolute;
-	padding-left: 40px;
-	line-height: 2.3;
+.container section{
+	background-color: #17202A;
+	color: #ffffff;
 }
-.intro h2{
-	text-transform: capitalize;
+.container section p{
+	padding: 0px 60px 60px 60px;
+}
+.container section h3{
+	padding-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.container .ful1{
+	background-image: url(../img/alex-radelich-XVUQfCkcaUg-unsplash.jpg);
+}
+
+.container .ful2{
+	background-image: url(../img/fahrul-azmi-lNpkIWnFzTo-unsplash.jpg);
+}
+.container .ful3{
+	background-image: url(../img/john-arano-LzxsSWAVMYs-unsplash.jpg);
 }
 
 
-@media screen and (max-width: 768px){
-	.container{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+@media only screen and (max-width: 425px)
+{
+	main{
+		line-height: 1.3;
 	}
-	.menu{
-		position: relative;
-		text-align: center;
-		width: 90%;
-		border: 1px solid #000;
-		max-height: 300px;
-	}
-	.container .intro{
-		width: 80%;
-		margin-left:-80px;
-		margin-top: 350px;
-		padding:20px;
-		margin-bottom:210px;
+	.container h3{
+		padding: 10px;
 	}
 }
