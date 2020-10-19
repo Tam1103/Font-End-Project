@@ -8,67 +8,216 @@ html,body{
 	font-family: inherit;
 	font-size: 15px;
 	font-family: 'Nunito', sans-serif;
+	text-align: center;
+}
+button{
+	cursor: pointer;
+	margin: 20px 0px; 
+	padding:20px;
+	color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+	border: 0;
+	outline: none;
+}
+header{
+	background-image: url(../img/pexels-sebastian-ervi-1763075.jpg);
+	background-size: cover;
+	min-height: 670px;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #ffffff;
+}
+
+header nav{
+	background: #17202A ;
+	opacity: 0.8;
+	position: fixed;
+	width: 100%;
+}
+
+header ul{
+	min-height: 35px;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+header a{
+	z-index: 1;
+	font-size: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 20px;
+	display: block;
+	transition: background 0.6s;
+}
+
+header a:hover{
+	background-color: #444;
+}
+
+header .myTunes{
+	padding: 13% 7% 0%;
+}
+
+.myTunes h1,.Music h1{
+	font-size: 70px;
+}
+.myTunes h3,.Music h3,.Movie h3,.world h3, .GiftCards h3{
+	font-size: 35px;
+	padding: 35px 0px;
+}
+.myTunes h5,.Music h5,.Movie h5,.world h5, .GiftCards h5{
+	font-size: 20px;
 }
 
 .container{
-	width: 99%;
+	width: 80%;
 	margin: auto;
-	display: flex;
-	flex-direction: columns;
-	justify-content: space-between;
+	padding-top: 20px;
+}
+main .Music{
+	min-height: 1000px;
+	color: #ffffff;
+	background: #17202A;
+}
+main .phone{
+	background-image: url(../img/mockup1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	min-height: 600px;
+	padding-bottom: 250px;
+	margin-top: -50px;
+}
+.Music .start{
+	background: red;
+}
+.Movie .readMore{
+	background-color: #154360;
+}
+
+.world{
+	background-image: url(../img/dino-reichmuth-d6yDSisNi4w-unsplash.jpg);
+	min-height: 580px;
+	color: #ffffff;
 	align-items: center;
-	flex-wrap: wrap;
+	display: flex;
+	background-size: cover;
+	background-position: center;
 }
 
-.menu{
-	background-attachment: fixed;
-	position: fixed;
-	max-height: 550px;
-	overflow-y:scroll;
-	text-transform: capitalize;
+.GiftCards{
+	text-align: left;
 }
-
-.menu ul li{
-	position:relative;
-	list-style-type: none;  
-	border-bottom: 1px solid #000;
-	padding: 20px;
+.GiftCards hr{
+	margin:10px 0px;
 }
-
-.menu a{
+.GiftCards .box{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+.GiftCards .card{
+	background-image: url(../img/cards.png);
+	background-size: contain;
+	background-position: center;
+	min-height: 400px;
+	background-repeat: no-repeat;
+}
+.GiftCards a{
 	text-decoration: none;
+	color:  #154360;
 }
-.container .intro{
-	margin-left:310px;
+.contact{
+	background: #17202A;
+	color: #ffffff;
+}
+.contact ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.contact .boxes{
+	padding:40px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.contact hr{
+	margin-bottom: 20px;
+}
+
+footer{
 	padding:20px;
-	margin-bottom:210px;
-	position: absolute;
-	padding-left: 40px;
-	line-height: 2.3;
+	color: #ffffff;
+	background-color: #000000;
 }
-.intro h2{
-	text-transform: capitalize;
+
+nav a#openup {
+	display: none;
 }
 
 
-@media screen and (max-width: 768px){
-	.container{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+@media screen and (max-width: 768px) {
+	.contact{display: none;}
+	main .phone{
+		min-height: 300px;
 	}
-	.menu{
+	.GiftCards{
+		margin-bottom: 30px;
+	}
+	.GiftCards .box{
+		grid-template-columns:1fr;	
+	}
+	.GiftCards .card{
+		min-height: 200px;
+	}
+}
+
+@media screen and (max-width: 425px)
+{
+	main .phone{
+		min-height: 100px;
+	}
+}
+
+@media screen and (max-width: 550px)
+{
+	header .mytu, ul{
+		display: none;
+	}
+	header li{
+		width: 100%;
 		position: relative;
-		text-align: center;
-		width: 90%;
-		border: 1px solid #000;
-		max-height: 300px;
 	}
-	.container .intro{
-		width: 80%;
-		margin-left:-80px;
-		margin-top: 350px;
-		padding:20px;
-		margin-bottom:210px;
+	header li a{
+		text-align: left;
+		border-bottom: 1px solid #444;
+	}
+
+	nav a#openup:after {
+		content: '|||';
+		transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		/* IE 9 */
+		-webkit-transform: rotate(-90deg);
+		/* Safari and Chrome */
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 50px;
+		top: -1px;
+	}
+	nav a#openup {
+		text-align: left;
+		display: block;
+		background-color: #444;
+		width: 100%;
+		position: relative;
 	}
 }

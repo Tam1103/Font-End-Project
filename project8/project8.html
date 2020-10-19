@@ -3,131 +3,137 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
+	<meta name="description" content="myTunes">
+	<meta name="keywords" content="myTunes, music, movies">
 	<meta name="author" content="tam dominh">
 	<link rel="shortcut icon" href="img/CV.jpg">
-	<title>my website - create by minh tam do</title>
+	<title>myTunes - Do Minh Tam</title>
 	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="project8.html" class="mytu">myTunes</a></li>
+				<li><a href="#" class="over">Overview</a></li>
+				<li><a href="#" class="music">Music</a></li>
+				<li><a href="#" class="video">Video</a></li>
+				<li><a href="#" class="gift">Gift Cards</a></li>
+			</ul>
+			<a href='#' id='openup'>myTunes</a>
+		</nav>
+		<div class="myTunes">
+			<h1>myTunes</h1>
+			<h3>Your music, movies, and TV shows take center stage</h3>
+			<h5>myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</h5>
+		</div>
+	</header>
 	<main>
-		<div class="container">
-			<div class="menu">		
-				<ul>
-					<li class="maths"><h1>js documentations</h1></li>
-					<li><a href="#box-1">introduction</a></li>
-					<li><a href="#box-2">what you should already know</a></li>
-					<li><a href="#box-3">Javascript and java</a></li>
-					<li><a href="#box-4">hello world</a></li>
-					<li><a href="#box-5">variable</a></li>
-					<li><a href="#box-6">declaring variables</a></li>
-					<li><a href="#box-7">variable scope</a></li>
-					<li><a href="#box-8">reference</a></li>
-					
-				</ul>
-			</div>	
-			<div class="intro">
-				<div class="intro-container">
-					<div id="box-1">
-						<h2>introduction</h2>
-						<p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them
-							<br><br>
-							JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-						</p>
-						<ul>
-							<li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-							<li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
-						</ul>
-					</div>
+		<section class="Music">
+			<div class="container">
+				<h1><i class="fas fa-music"></i> Music</h1>
+				<h3>45 million songs. Zero ads.</h3>
+				<h5>Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal myTunes library — no matter where it came from — lives right alongside the Orange Music catalog. Start your free three-month trial with no commitment, and cancel anytime.</h5>
+				<button class="start">
+					Start Your Trial Now
+				</button>
+				<p>Orange Music is available in myTunes, and for iOS and Android devices.</p>
+				<div class="phone">
 
-					<div id="box-2">
-						<h2>What you should already know</h2>
-						<p>This guide assumes you have the following basic background:
-						</p>
-						<ul>
-							<li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-							<li>Good working knowledge of HyperText Markup Language (HTML).</li>
-							<li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-						</ul>
-					</div>
-
-					<div id="box-3">
-						<h2>JavaScript and Java</h2>
-						<p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
-							<br><br>
-							In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.	<br><br>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
-						</p>
-
-					</div>
-
-					<div id="box-4">
-						<h2>Hello world</h2>
-						<p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
-						</p>
-						<code>function greetMe(yourName) {
-							alert("Hello " + yourName);
-						}
-					greetMe("World");</code>
-					<p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
 				</div>
-
-				<div id="box-5">
-					<h2>Variables</h2>
-					<p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
-						<br><br>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).<br><br>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
-					</p>
-				</div>
-
-				<div id="box-6">
-					<h2>Declaring variables</h2>
-					<p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
-						The name of the function.
-						A list of arguments to the function, enclosed in parentheses and separated by commas.
-						The JavaScript statements that define the function, enclosed in curly brackets, { }.
-						For example, the following code defines a simple function named square:
-
-						function square(number) {
-						return number * number;
-					}
-					The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.
-
-					return number * number;
-					Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
-				</p>
 			</div>
+		</section>
 
-			<div id="box-7">
-				<h2>Variable scope</h2>
-				<p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.<br><br>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
-					<code>if (true) {
-						var x = 5;
-					}
-				console.log(x);  // 5</code>
+		<section class="Movie">
+			<div class="container">
+				<h3>The movie and TV collection you always wished for. Granted.</h3>
+				
+				<h5>With over 100,000 movies and TV shows to choose from, there’s always something great to watch on myTunes and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going somewhere you won’t have Wi-Fi.</h5>
+				<button class="readMore">
+					Read More
+				</button>
+				<p>Orange Music is available in myTunes, and for iOS and Android devices.</p>
+				<div class="phone">
+					
+				</div>
+			</div>
+		</section>
 
-				<p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+		<section class="world">
+			<div class="container">
+				<h3>A world of entertainment. Available wherever you are.</h3>
+				<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo non velit repellat alias saepe inventore repellendus? Molestias suscipit eos tempora? Quae quaerat cumque in veritatis impedit dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi totam ad quas? Ipsam laudantium soluta delectus!</h5>
+			</div>
+		</section>
 
-				<code>if (true) {
-					let y = 5;
-				}
-				console.log(y);  
-			// ReferenceError: y is not defined</code>
-		</p>
-	</div>
+		<section class="GiftCards">
+			<div class="container">
+				<div class="box">
+					<div class="card">
+					</div>
+					<div class="redeem">
+						<h3>Gift Cards</h3>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati molestias veritatis porro.</p>
+						<p>Already have an Orange MyTunes Music Gift Card?</p>
+						<hr>
+						<a href="#"><i class="fas fa-chevron-right"></i> Redeem</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<section class="contact">
+			<div class="container">
+				<div class="boxes">
+					<ul>
+						<li><h3>Shop & Learn</h3></li>
+						<hr>
+						<li>Music</li>
+						<li>Movies</li>
+						<li>Shows</li>
+						<li>Apps</li>
+						<li>Gift Cards</li>
+					</ul>
 
-	<div id="box-8">
-		<h2>Reference</h2>
-		<ul>
-			<li>All the documentation in this page is taken from <a href="#">MDN</a></li>
-		</ul>
-	</div>
-</div>
-</div>
-</div>
-</main>
+					<ul>
+						<li><h3>Orange Store</h3></li>
+						<hr>
+						<li>Find a Store</li>
+						<li>Today at Orange</li>
+						<li>Orange Camp</li>
+						<li>Financing</li>
+						<li>Order Status</li>
+					</ul>
+
+					<ul>
+						<li><h3>Education & Business</h3></li>
+						<hr>
+						<li>Orange & Education</li>
+						<li>Shop For College</li>
+						<li>Orange & Business</li>
+						<li>Shop For Business</li>
+						<li>Jobs</li>
+					</ul>
+
+					<ul>
+						<li><h3>About Dominhtam</h3></li>
+						<hr>
+						<li>11-03-1997</li>
+						<li>(0) 352 800 353</li>
+						<li>Dai Nghia - Dai Loc - Quang Nam</li>
+						<li>dominhtam1103@gmail.com</li>
+						<li>tam1103.github.io</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2020 Do Minh Tam</p>
+	</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 <script type="text/javascript" src="js/main.js"></script>
 </html>
