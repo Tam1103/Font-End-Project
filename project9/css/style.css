@@ -1,223 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-}
-
-html,body{
-	font-family: inherit;
-	font-size: 15px;
-	font-family: 'Nunito', sans-serif;
-	text-align: center;
-}
-button{
-	cursor: pointer;
-	margin: 20px 0px; 
-	padding:20px;
-	color: #ffffff;
-	font-family: 'Nunito', sans-serif;
-	border: 0;
-	outline: none;
-}
-header{
-	background-image: url(../img/pexels-sebastian-ervi-1763075.jpg);
-	background-size: cover;
-	min-height: 670px;
-	background-repeat: no-repeat;
-	background-position: center;
-	color: #ffffff;
-}
-
-header nav{
-	background: #17202A ;
-	opacity: 0.8;
-	position: fixed;
-	width: 100%;
-}
-
-header ul{
-	min-height: 35px;
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-}
-
-header a{
-	z-index: 1;
-	font-size: 20px;
-	text-decoration: none;
-	color: #ffffff;
-	padding: 10px 20px;
-	display: block;
-	transition: background 0.6s;
-}
-
-header a:hover{
-	background-color: #444;
-}
-
-header .myTunes{
-	padding: 13% 7% 0%;
-}
-
-.myTunes h1,.Music h1{
-	font-size: 70px;
-}
-.myTunes h3,.Music h3,.Movie h3,.world h3, .GiftCards h3{
-	font-size: 35px;
-	padding: 35px 0px;
-}
-.myTunes h5,.Music h5,.Movie h5,.world h5, .GiftCards h5{
-	font-size: 20px;
-}
-
-.container{
-	width: 80%;
-	margin: auto;
-	padding-top: 20px;
-}
-main .Music{
-	min-height: 1000px;
-	color: #ffffff;
-	background: #17202A;
-}
-main .phone{
-	background-image: url(../img/mockup1.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	min-height: 600px;
-	padding-bottom: 250px;
-	margin-top: -50px;
-}
-.Music .start{
-	background: red;
-}
-.Movie .readMore{
-	background-color: #154360;
-}
-
-.world{
-	background-image: url(../img/dino-reichmuth-d6yDSisNi4w-unsplash.jpg);
-	min-height: 580px;
-	color: #ffffff;
-	align-items: center;
-	display: flex;
-	background-size: cover;
-	background-position: center;
-}
-
-.GiftCards{
-	text-align: left;
-}
-.GiftCards hr{
-	margin:10px 0px;
-}
-.GiftCards .box{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
-}
-.GiftCards .card{
-	background-image: url(../img/cards.png);
-	background-size: contain;
-	background-position: center;
-	min-height: 400px;
-	background-repeat: no-repeat;
-}
-.GiftCards a{
-	text-decoration: none;
-	color:  #154360;
-}
-.contact{
-	background: #17202A;
-	color: #ffffff;
-}
-.contact ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-.contact .boxes{
-	padding:40px 0px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-.contact hr{
-	margin-bottom: 20px;
-}
-
-footer{
-	padding:20px;
-	color: #ffffff;
-	background-color: #000000;
-}
-
-nav a#openup {
-	display: none;
-}
-
-
-@media screen and (max-width: 768px) {
-	.contact{display: none;}
-	main .phone{
-		min-height: 300px;
+	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
 	}
-	.GiftCards{
-		margin-bottom: 30px;
-	}
-	.GiftCards .box{
-		grid-template-columns:1fr;	
-	}
-	.GiftCards .card{
-		min-height: 200px;
-	}
-}
 
-@media screen and (max-width: 425px)
-{
-	main .phone{
-		min-height: 100px;
+	html,body{
+		font-family: inherit;
+		font-family: 'Nunito', sans-serif;
+		text-align: center;
 	}
-}
 
-@media screen and (max-width: 550px)
-{
-	header .mytu, ul{
-		display: none;
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
 	}
-	header li{
+
+	a{
+		text-decoration: none;
+		color: #ffffff;
+		padding: 15px;
+	}
+	a:hover{
+		color: #000000;
+	}
+	button{
+		border: 0;
+		padding: 10px 15px;
+		outline: none;	
+		cursor: pointer;
+		color: 	#ffffff;
+		background-color: #000000;
+		font-family: 'Nunito', sans-serif;
+	}
+	button:hover{
+		background: #ffffff;
+		color: #000000;
+		font-weight: bold;
+	}
+	header {
+		min-height: 260px;
+	}
+	header .bg-images{
+		min-height: 260px;
 		width: 100%;
-		position: relative;
-	}
-	header li a{
-		text-align: left;
-		border-bottom: 1px solid #444;
-	}
-
-	nav a#openup:after {
-		content: '|||';
-		transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		/* IE 9 */
-		-webkit-transform: rotate(-90deg);
-		/* Safari and Chrome */
-		width: 30px;
-		height: 30px;
-		display: inline-block;
+		background: #333 url(../img/pexels-pixabay-270360.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 		position: absolute;
-		right: 50px;
-		top: -1px;
+		z-index: -1;
+		opacity: 0.5;
 	}
-	nav a#openup {
-		text-align: left;
-		display: block;
-		background-color: #444;
+	header .box-header{
+		padding: 50px 100px 0px 100px;
+	}
+	.box-header p {
+		padding: 13px 0px;
+	}
+	.box-header h1,footer h5{
+		text-shadow: 0px 0px 50px rgb(0,0,0,20);
+		text-transform: uppercase;
+	}
+	.container{
+		width: 70%;
+		margin: auto;
+	}
+
+	main #section-a{
+		padding: 50px 0px 80px 0px;
+	}
+	#section-a p{
+		columns: 2;
+		margin-top: 10px;
+	}
+	#section-b{
+		background-color: #333;
+	}
+	.boxes div{
+		background-position: center;
+		margin: 30px 0px;
+		background-color: #ffffff;
+	}
+	#section-b img{
 		width: 100%;
-		position: relative;
+		background-size: cover;
 	}
-}
+	#section-b .boxes{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
+	}
+	#section-b h5{
+		padding: 40px 0px;
+	}
+	#section-b p{
+		padding: 0px 20px 30px 20px;
+	}
+
+	#section-c{
+		min-height: 400px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	#section-c div{
+		padding: 30px 100px;
+	}
+
+	#section-c .box-d{
+		grid-column: 1/ span 2;
+	}
+
+	#section-c .box-e{
+		background-color: #3498DB;
+		color: #ffffff;
+	}
+	#section-c .box-f{
+		background-color: #333;
+		color: #ffffff;
+	}
+	#section-c p{
+		padding-top: 20px;
+	}
+
+	footer{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 20px 100px;
+		background-color: #000000;
+		color: #ffffff;
+	}
+
+	footer .span-footer{
+		color: #3498DB ;
+		cursor: pointer;
+	}
+
+	@media screen and (max-width: 768px) {
+		.container{
+			width: 90%;
+		}
+
+		header {
+			min-height: 500px;
+
+		}
+		header .bg-images{
+			min-height: 500px;
+		}
+		.box-header h1{
+			font-size: 20px;
+			text-transform: uppercase;
+			padding-top: 50px;
+		}
+		#section-a p{
+			columns: 1;
+		}
+
+		#section-b .boxes{
+			grid-template-columns: 1fr;
+		}
+		#section-b .boxes .box-b,.boxes .box-c{
+			margin-top: -25px;
+		}
+
+		#section-c{
+			grid-template-columns: 1fr;
+		}
+		#section-c .box-d{
+			grid-column: 1;
+		}
+		footer{
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media screen and (max-width: 425px) {
+		
+		header .box-header{
+			padding: 50px 20px;
+		}
+
+		#section-c div{
+			padding: 30px 20px;
+		}
+
+	}
