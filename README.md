@@ -33,4 +33,9 @@ position-absolute: place the cards on the screen
 positon-relative can go to with properties z-inden:1
 # project 7
 background-attachment: fixed;  //scroll text with images.
-
+# project 8
+- Basic responsive menu
+- use :after {content: '|||'; transform: rotate(-90deg);
+# project 9
+- use grid in css: grid-column, grid-rows, grid-gap, margin, padđing and columns in css
+# project 10
