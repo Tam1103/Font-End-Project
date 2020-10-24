@@ -38,4 +38,6 @@ background-attachment: fixed;  //scroll text with images.
 - use :after {content: '|||'; transform: rotate(-90deg);
 # project 9
 - use grid in css: grid-column, grid-rows, grid-gap, margin, padđing and columns in css
+position: absolute go with opacity:0.6 and z-index: -1;
 # project 10
+- Use the grid to divide icons and text
